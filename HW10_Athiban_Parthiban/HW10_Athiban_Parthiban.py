@@ -200,7 +200,7 @@ class Instructor:
 
 
 def main():
-    stevens = Repository("/Users/athibanp/athiban/ms-cs/SSW-810/Assignments/HW09_Athiban_Parthiban/data", True)
+    stevens = Repository("data", True)
 
 
 if __name__ == "__main__":
