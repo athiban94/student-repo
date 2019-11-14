@@ -1,4 +1,4 @@
-""" Home Work #9 """
+""" Home Work #10 """
 from prettytable import PrettyTable
 import os
 
@@ -112,7 +112,8 @@ class Student:
                     self.studentSummary[cwid]['completed_course'] = list()
 
             for studentId, course, grade, instructor_id in grades_list:
-                self.studentSummary[studentId]['completed_course'].append(course)
+                if(grade in ['A', 'A-', 'B+', 'B', 'B-', 'C+', 'C']):
+                    self.studentSummary[studentId]['completed_course'].append(course)
             
             for (cwid, name, major) in student_details:
                 if(cwid  in self.studentSummary):
